@@ -6,12 +6,12 @@ Documentación de mi proceso para el examen.
 - Github:
 
 ##¿Qué voy a hacer en este proyecto? Explicación
-En mi solemne 2 hice un sistema inspirado en el Op Art y un poco del Diseño Interactivo, donde habían cuatro cuadrantes de líneas verticales que se movían dependiendo en que direccioón se posicionaba el mouse, ahí variaba el movimiento de las líneas y el grosor. 
+En mi solemne 2 hice un sistema inspirado en el Op Art y un poco del Diseño Interactivo, donde habían cuatro cuadrantes de líneas verticales que se movían dependiendo en que dirección se posicionaba el mouse, ahí variaba el movimiento de las líneas y el grosor. 
 Quise mantener mi código de la segunda solemne para mejorarlo y agregarle el contenido visto en esta última unidad.
 
-Este proyecto va a tratar de tres estados: pantalla de inicio, pantalla de la ecperiencia y pantalla de despedida, con un estado que será apretar la tecla "P" para ver la interactividad. El contenido múltimedia que usaré será el sonido.
+Este proyecto va a tratar de tres estados: pantalla de inicio, pantalla de la experiencia y pantalla de despedida, con un estado que será apretar la tecla "enter" para ver la interactividad. El contenido multimedia que usaré será el sonido.
 
-El concepto es una discoteca, aprovechando que en mi segunda solemne da esa vibra, quise potenciarla. En la pantalla de inicio será la entrada a la discoteca, cuando se haga click en la tecla "P" las luces se empezarán a mover y con un click se va a reproducir una canción. Cuando esta termine, tendrás que hacer click para llegar a la pantalla final que será la salida de la discoteca.
+El concepto es una discoteca, aprovechando que en mi segunda solemne da esa vibra, quise potenciarla. En la pantalla de inicio será la entrada a la discoteca, cuando se haga click en la tecla "enter" las luces se empezarán a mover y con un click se va a reproducir una canción. Cuando esta termine, tendrás que hacer click para llegar a la pantalla final que será la salida de la discoteca.
 
 Usaré recursos vistos en las unidades anteriores.
 
@@ -95,4 +95,22 @@ Ya luego terminé con los detalles exteriores, como las personas que vendrían s
 }
 ```
 
-Ya con eso listo, pasamos a los códigos de los estados.
+Ya con eso listo, pasamos a los demás códigos. Los voy a separar por partes: códigos para los Estados, códigos para el sonido, y iré explicando cuales fueron los nuevos códigos que agregué.
+
+Antes de empezar, establecí estas variables globales
+```let estado = 0;
+
+let cantidadLineas = 300;
+let variacion = 5;
+
+let grosorLinea = 2; 
+
+let sonido;
+```
+Los nuevos que agregué fueron: **let estado**, **let grosorLinea** y **let sonido**. El primero es para crear las pantallas de la experiencia, si mi estado vale 0, el programa va a mostrar la pantalla con el dibujo de la discoteca. Si vale 1 el programa va a cambiar a la pantalla de la experiencia y si vale 2, el programa va a cambiar y mostrar el dibujo de la discoteca pero de día. 
+
+Let grosorLinea sirve para guardar y actualizar dinámicamente el grosor que van a tener las líneas en la pantalla según el movimiento del mouse. 
+
+Y let sonido es una variable vacía que sirve como una especie de contenedor para guardar el audio que elija.
+
+- **Códigos para los Estados** 
