@@ -70,7 +70,7 @@ strokeWeight(grosorLinea); ```
 **Funciones de los dibujos** Para que el código no fuera un desorden, separé el dibujo de cada pantalla en funciones propias. Tenemos ```dibujoDiscotecaNoche``` y ```dibujoDiscotecaDia```
 
  El dibujo de la discoteca de noche lo realicé primero en Illustrator, para definir con precisión la posición (X, Y) de cada figura antes de pasarlo a p5.js. Como se trataba únicamente de un dibujo estático, decidí construirlo directamente dentro de draw(), sin necesidad de variables globales.
-  (aca imagen del dibujo en illustrator y final
+![Imagen](Proceso_Examen_PC/)
 
  Empecé con la forma del edificio, para empezar a ubicar las otras figuras.
 
