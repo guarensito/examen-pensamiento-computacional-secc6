@@ -6,7 +6,7 @@ Documentación de mi proceso para el examen.
 **Descripción general:** Este es un sketch interactivo que simula la experiencia de entrar, vivir y salir de una discoteca. La persona que interactué controla la transición entre los tres estados mediante el mouse y el teclado, cada momento tiene su propia estética visual y sonora.
 
 ##Links
-- P5.js pantalla fija:https: //editor.p5js.org/francisca.castro3/full/L8aBG3Fr0
+- P5.js pantalla fija: https: //editor.p5js.org/francisca.castro3/full/L8aBG3Fr0
 - Editable: https://editor.p5js.org/francisca.castro3/sketches/L8aBG3Fr0
 
 ## ¿Qué voy a hacer en este proyecto? Explicación
@@ -25,7 +25,7 @@ A continuación se documenta paso a paso el proceso de construcción del proyect
 
 ```let estado = 0;
 
-let cantidadLineas = 300;
+let cantidadLineas = 81;
 let variacion = 5;
 
 let grosorLinea = 2; 
