@@ -41,6 +41,9 @@ Las nuevas variables agregadas son ```let estado``` , ```let grosorLinea``` y ``
 function preload(){
   sonido = loadSound("fiebre.mp3");
 ```
+
+[Escuchar audio fiebre.mp3](Contenido_PC/fiebre.mp3)
+
 **Códigos para los estados** Acá se decide qué estado se debe mostrar en la pantalla según lo que esté pasando.
 
  ```if (estado === 0) {
@@ -71,7 +74,8 @@ strokeWeight(grosorLinea); ```
 
  El dibujo de la discoteca de noche lo realicé primero en Illustrator, para definir con precisión la posición (X, Y) de cada figura antes de pasarlo a p5.js. Como se trataba únicamente de un dibujo estático, decidí construirlo directamente dentro de draw(), sin necesidad de variables globales.
 ![Imagen](Proceso_Examen_PC/illustrator_dibujo.png)
-![Imagen](Proceso_Examen_PC/pensamiento computacional.jpg)
+
+![Imagen](Proceso_Examen_PC/dibujo_noche.jpg)
 
  Empecé con la forma del edificio, para empezar a ubicar las otras figuras.
 
@@ -81,7 +85,7 @@ strokeWeight(grosorLinea); ```
   noStroke();
   rect(110, 100, 580, 300);
 ```
-  (Imagen p1)
+  ![Imagen](Proceso_Examen_PC/Parte_1.png)
 
   Luego continúo con los detalles interiores del edificio principal.
 
@@ -113,9 +117,9 @@ strokeWeight(grosorLinea); ```
 
   rect(625, 240, 35, 120)
 ```
-imagen p2
+ ![Imagen](Proceso_Examen_PC/Parte_2.png)
 
-Ya luego terminé con los detalles exteriores, como las personas que vendrían siendo los rectángulos grises y la vereda junto a la calle.
+Ya luego voy con los detalles exteriores, como las personas que vendrían siendo los rectángulos grises y la vereda junto a la calle.
 
   ```fill(120);
   noStroke();
@@ -142,6 +146,7 @@ Ya luego terminé con los detalles exteriores, como las personas que vendrían s
   rect(670, 450, 90, 12);
 }
 ```
+ ![Imagen](Proceso_Examen_PC/Parte_3.png)
 
 ```fill(255);
     noStroke();
@@ -168,6 +173,8 @@ Para construir el sol.
   textSize(20);
   text("¡ESPERO QUE LO HAYAS DISFRUTADO, VUELVE PRONTO!", width / 2, 400);
 ```
+ ![Imagen](Proceso_Examen_PC/dibujo_día.jpg)
+
 El dibujar fue mi parte favorita, aunque cuando estaba dibujando la versión de día no podía ver como iba quedando, asumí que era porque seriá la pantalla final y aún no lo tenía preparado del todo el código que lo ejecutaba.
 
 **Códigos segunda solemne** Mantuve todo igual, excepto los cambios que mencioné anteriormente.
@@ -217,22 +224,33 @@ function keyPressed(){
 ```
 
 **Errores que tuve** En estos errores consulté a una inteligencia artificial porque no estaba entendiendo que sucedía.
-(error 1) 
 
+ ![Imagen](Proceso_Examen_PC/error_1.png)
+ 
 En este error había escrito mal la función, en vez de poner dibujarDiscotecaNoche, habiá puesto dibujarDiscotecanoche. 
 
-
-(error 2)
+ ![Imagen](Proceso_Examen_PC/error_2.png)
 
 Hay que escribir bien los archivos. Había puesto solo el nombre y no el ".mp3".
 
-error 3
+ ![Imagen](Proceso_Examen_PC/error_3.png)
+ 
 Hay que tener ojo en la cantidad de corchetes o "murciélagos". Puse uno extra creyendo que estaba bien, pero mi código no reproducía a causa de eso.
 
-error 4 
-
+ ![Imagen](Proceso_Examen_PC/error_4.png)
+ 
 Al poner mal la sintaxis para que se pueda reproducir el audio, provocó que todo mi sketch no se reproduciera.
+
+Esas fueron las capturas que tomé para consultar a la ia cuales eran mis errores, porque yo no veía nada extraño.
 
 ## Diagrama de flujo 
 
+Este primer diagrama es del sistema nuevo que le agregué a mi examen.
 
+ ![Imagen](Contenido_PC/Diagrama1.pdf)
+
+Este segundo diagrama lo hice para mostrar los cambios de mi segunda solemne.
+
+ ![Imagen](Contenido_PC/Diagrama2.pdf)
+
+ **¿Qué inputs utilizo?** posición del mouse en X e Y, clic del mouse y la tecla Enter.
