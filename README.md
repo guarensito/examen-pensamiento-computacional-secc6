@@ -216,3 +216,22 @@ function keyPressed(){
 ```
 
 **Errores que tuve** En estos errores consulté a una inteligencia artificial porque no estaba entendiendo que sucedía.
+(error 1) 
+
+En este error había escrito mal la función, en vez de poner dibujarDiscotecaNoche, habiá puesto dibujarDiscotecanoche. 
+
+
+(error 2)
+
+Hay que escribir bien los archivos. Había puesto solo el nombre y no el ".mp3".
+
+error 3
+Hay que tener ojo en la cantidad de corchetes o "murciélagos". Puse uno extra creyendo que estaba bien, pero mi código no reproducía a causa de eso.
+
+error 4 
+
+Al poner mal la sintaxis para que se pueda reproducir el audio, provocó que todo mi sketch no se reproduciera.
+
+## Diagrama de flujo 
+
+
